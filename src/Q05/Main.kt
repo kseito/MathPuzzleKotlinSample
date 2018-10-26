@@ -29,7 +29,7 @@ fun useRecursiveCall() {
     println("Answer: ${count}通り")
 }
 
-fun calculate(expectedSum: Int, coins: MutableList<Int>, coinNum: Int) {
+private fun calculate(expectedSum: Int, coins: MutableList<Int>, coinNum: Int) {
     val coin = coins[0]
     coins.removeAt(0)
     if (coins.size == 0) {
